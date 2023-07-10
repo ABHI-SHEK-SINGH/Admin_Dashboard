@@ -1,10 +1,10 @@
-
+import Sidebar from "../../components/sidebar/Sidebar";
 import "./home.css"
 const Home = () => {
     return (
         <div className="home">
-
-            <h1 className="Title"> child  Home Page</h1>
+            <Sidebar />
+            <div className="homeContainer">container</div>
         </div>
 
     )

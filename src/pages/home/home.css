@@ -1,9 +1,8 @@
 .home {
-    background: "red";
-    font-size: 13px;
+    display: flex;
 }
 
-.Title {
-    background: red;
-    font-size: 20px;
+.homeContainer {
+    background-color: lightblue;
+    flex: 6
 }
