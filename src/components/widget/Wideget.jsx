@@ -1,4 +1,4 @@
-import "./widget.scss";
+import "./wideget.css";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
@@ -82,19 +82,19 @@ const Widget = ({ type }) => {
         <div className="widget">
             <div className="left">
                 <span className="title">{data.title}</span>
-                <span className="counter">
+                <span className="money_data">
                     {data.isMoney && "$"} {amount}
                 </span>
                 <span className="link">{data.link}</span>
             </div>
             <div className="right">
-                <div className="percentage  0">
+                <div className="percentage positive">
                     <KeyboardArrowUpIcon />
                     {diff} %
-                </div>
+                </ div>
                 {data.icon}
             </div>
-        </div>
+        </div >
     );
 };
 
