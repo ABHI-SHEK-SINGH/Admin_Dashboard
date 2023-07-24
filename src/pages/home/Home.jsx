@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Widget from "../../components/widget/Wideget";
 import Featured from "../../components/featured/Featured";
 import Chart from "../../components/chart/Chart.jsx";
+import List from "../../components/table/Table.jsx";
 
 import "./home.css"
 // import { ImportantDevices } from "@mui/icons-material";
@@ -21,6 +22,10 @@ const Home = () => {
                 <div className="charts">
                     <Featured />
                     < Chart />
+                </div>
+                <div className="listContainer">
+                    <div className="listTitle">Latest Transactions</div>
+                    <List />
                 </div>
             </div>
         </div>
