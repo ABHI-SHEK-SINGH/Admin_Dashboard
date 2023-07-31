@@ -12,12 +12,16 @@ import CreditCardOutlinedIcon from '@mui/icons-material/CreditCardOutlined';
 import InsertChartOutlinedIcon from '@mui/icons-material/InsertChartOutlined';
 import SettingsSystemDaydreamOutlinedIcon from '@mui/icons-material/SettingsSystemDaydreamOutlined';
 import PsychologyOutlinedIcon from '@mui/icons-material/PsychologyOutlined';
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo">Admin dashboard</span>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">Admin dashboard</span>
+                </Link>
+
             </div>
             <hr />
             <div className="center">
