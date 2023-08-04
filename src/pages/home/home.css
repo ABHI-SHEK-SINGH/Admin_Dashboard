@@ -3,7 +3,7 @@
 }
 
 .homeContainer {
-    background-color: black;
+
     flex: 6
 }
 
@@ -25,4 +25,8 @@
     font-weight: 500;
     color: gray;
     margin-bottom: 15px;
+}
+
+.app {
+    background-color: black;
 }

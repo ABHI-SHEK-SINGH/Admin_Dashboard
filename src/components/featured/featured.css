@@ -54,7 +54,7 @@
     justify-content: space-between;
 }
 
-.item {
+.info_container {
     text-align: center;
     flex-direction: column;
 }

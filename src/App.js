@@ -4,12 +4,13 @@ import List from "./pages/list/List"
 import Login from "./pages/login/Login"
 import NewPage from "./pages/new_page/New_page"
 import SinglePage from "./pages/single_page/Single_page"
+import "./style/dark.css"
 
 
 import { Route, Routes, BrowserRouter } from "react-router-dom"
 function App() {
   return (
-    <div className="App">
+    <div className="app dark">
       <BrowserRouter>
         <Routes>
           <Route path="/">
