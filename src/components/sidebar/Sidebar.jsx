@@ -19,7 +19,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <div className="top">
                 <Link to="/" style={{ textDecoration: "none" }}>
-                    <span className="logo">Admin dashboard</span>
+                    <span className="logo">Daily Tasks</span>
                 </Link>
 
             </div>
@@ -88,7 +88,7 @@ const Sidebar = () => {
 
                 </ul>
             </div>
-            <div className="bottom">
+            <div className="colorChange_container">
                 <div className="colorOption"></div>
                 <div className="colorOption"></div>
 

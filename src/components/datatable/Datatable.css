@@ -1,6 +1,7 @@
 .datatable {
-    height: 600px;
     padding: 20px;
+    background: white;
+    margin-top: 5px;
 }
 
 .datatableTitle {

@@ -64,10 +64,11 @@ span {
     margin-left: 10px;
 }
 
-.bottom {
+.colorChange_container {
     display: flex;
     align-items: center;
     margin: 10px;
+    justify-content: center;
 }
 
 .colorOption {

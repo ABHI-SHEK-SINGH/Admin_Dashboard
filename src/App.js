@@ -10,7 +10,7 @@ import "./style/dark.css"
 import { Route, Routes, BrowserRouter } from "react-router-dom"
 function App() {
   return (
-    <div className="app dark">
+    <div className="app">
       <BrowserRouter>
         <Routes>
           <Route path="/">
