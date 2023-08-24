@@ -3,6 +3,15 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
+import { auth, db, storage } from "../../firebase";
+import {
+    addDoc,
+    collection,
+    doc,
+    serverTimestamp,
+    setDoc,
+} from "firebase/firestore";
+
 
 const NewPage = ({ inputs, title }) => {
     const [file, setFile] = useState("");
@@ -27,7 +36,7 @@ const NewPage = ({ inputs, title }) => {
                         />
                     </div>
                     <div className="right">
-                        <form>
+                        <form className="newPage_form" onSubmit={Add_user}>
                             <div className="formInput">
                                 <label htmlFor="file">
                                     Image: <DriveFolderUploadOutlinedIcon className="icon" />
@@ -46,7 +55,7 @@ const NewPage = ({ inputs, title }) => {
                                     <input type={input.type} placeholder={input.placeholder} />
                                 </div>
                             ))}
-                            <button>Send</button>
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>

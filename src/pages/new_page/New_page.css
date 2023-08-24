@@ -39,7 +39,7 @@ img {
   flex: 2;
 }
 
-form {
+.newPage_form {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
